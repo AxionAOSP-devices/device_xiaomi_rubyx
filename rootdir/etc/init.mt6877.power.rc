@@ -95,6 +95,9 @@ on enable-low-power
     write /sys/kernel/ged/hal/timer_base_dvfs_margin 798
     write /sys/kernel/ged/hal/loading_base_dvfs_step 4
 
+    # Enable suspend to RAM
+    write /sys/power/mem_sleep "deep"
+
     # Utilization Clamping
     # Tuning
     write /proc/sys/kernel/sched_util_clamp_min_rt_default 0
