@@ -78,6 +78,10 @@ on enable-low-power
     write /sys/block/dm-4/queue/read_ahead_kb 128
     write /sys/block/dm-5/queue/read_ahead_kb 128
 
+    # fs
+    write /dev/sys/fs/by-name/userdata/cp_interval 6000
+    write /dev/sys/fs/by-name/userdata/gc_urgent_sleep_time 200
+
     # sched
     write /proc/sys/kernel/sched_migration_cost_ns 200000
     write /proc/sys/kernel/sched_min_granularity_ns 1000000
