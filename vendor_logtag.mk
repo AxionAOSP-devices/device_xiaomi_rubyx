@@ -258,3 +258,8 @@ PRODUCT_VENDOR_PROPERTIES += \
     persist.log.tag.WpfaShmReadMsgHandler=$(VENDOR_LOG_LEVEL) \
     persist.log.tag.WpfaShmSynchronizer=$(VENDOR_LOG_LEVEL) \
     persist.log.tag.WpfaShmWriteMsgHandler=$(VENDOR_LOG_LEVEL)
+
+ifneq (eng,$(TARGET_BUILD_VARIANT))
+PRODUCT_VENDOR_PROPERTIES += \
+    persist.log.tag=I
+endif
