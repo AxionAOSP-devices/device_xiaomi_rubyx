@@ -120,7 +120,9 @@ USE_DEX2OAT_DEBUG := false
 # Display
 PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@2.3-service \
-    android.hardware.memtrack-service.mediatek-mali \
+    android.hardware.memtrack-service.mediatek-mali
+
+$(call soong_config_set,stagefright,target_disable_thumbnail_block_model,true)
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2400
