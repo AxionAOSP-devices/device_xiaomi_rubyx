@@ -29,7 +29,7 @@ on init
     write /sys/devices/system/cpu/cpufreq/policy6/scaling_governor "schedutil"
     
     # update cpus for cpuset cgroup
-    write /dev/cpuset/foreground/cpus 0-2,4-7
+    write /dev/cpuset/foreground/cpus 0-2,4-6
     write /dev/cpuset/background/cpus 0-2
     write /dev/cpuset/system-background/cpus 0-3
     write /dev/cpuset/top-app/cpus 0-7
