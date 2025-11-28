@@ -13,6 +13,9 @@ $(call inherit-product, device/xiaomi/rubyx/device.mk)
 # Inherit some common LineageOS stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# GMS flag
+WITH_GMS := false
+
 PRODUCT_NAME := lineage_rubyx
 PRODUCT_DEVICE := rubyx
 PRODUCT_MANUFACTURER := Xiaomi
@@ -25,3 +28,4 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildFingerprint=Redmi/ruby_global/ruby:14/UP1A.230620.001/OS2.0.8.0.UMOMIXM:user/release-keys \
     SystemName=ruby_global \
     SystemDevice=ruby
+

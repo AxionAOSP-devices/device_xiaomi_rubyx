@@ -391,3 +391,5 @@ $(call inherit-product, vendor/xiaomi/rubyx/rubyx-vendor.mk)
 # Include private keys
 -include vendor/infinity-priv/keys/keys.mk
 
+# Animation fix
+PERF_ANIM_OVERRIDE := true
