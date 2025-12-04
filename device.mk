@@ -121,7 +121,7 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@2.3-service \
     android.hardware.memtrack-service.mediatek-mali
 
-$(call soong_config_set,stagefright,target_disable_thumbnail_block_model,true)
+$(call soong_config_set_bool,stagefright,target_disable_thumbnail_block_model,true)
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2400
@@ -191,7 +191,7 @@ PRODUCT_PACKAGES += \
 $(call soong_config_set,lineage_health,charging_control_charging_path,/sys/class/power_supply/battery/input_suspend)
 $(call soong_config_set,lineage_health,charging_control_charging_enabled,0)
 $(call soong_config_set,lineage_health,charging_control_charging_disabled,1)
-$(call soong_config_set,lineage_health,charging_control_supports_bypass,false)
+$(call soong_config_set_bool,lineage_health,charging_control_supports_bypass,false)
 
 # Linker
 PRODUCT_COPY_FILES += \
