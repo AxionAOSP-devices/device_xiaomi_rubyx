@@ -90,6 +90,7 @@ debug.sf.high_fps.early.sf.duration=13800000
 debug.sf.high_fps.early.app.duration=10000000
 debug.sf.high_fps.earlyGl.sf.duration=13800000
 debug.sf.high_fps.earlyGl.app.duration=10000000
+debug.sf.enable_egl_image_tracker=0
 debug.sf.high_fps.hwc.min.duration=8500000
 debug.sf.enable_gl_backpressure=0
 debug.sf.latch_unsignaled=true
