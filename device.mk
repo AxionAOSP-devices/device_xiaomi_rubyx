@@ -9,7 +9,13 @@ DEVICE_PATH := device/xiaomi/rubyx
 $(call inherit-product, $(SRC_TARGET_DIR)/product/developer_gsi_keys.mk)
 
 # Dalvik VM Configuration
-$(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
+PRODUCT_VENDOR_PROPERTIES += \
+    dalvik.vm.heapstartsize=24m \
+    dalvik.vm.heapgrowthlimit=384m \
+    dalvik.vm.heapsize=512m \
+    dalvik.vm.heaptargetutilization=0.42 \
+    dalvik.vm.heapminfree=8m \
+    dalvik.vm.heapmaxfree=56m
 
 # Inherit virtual_ab_ota product
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
