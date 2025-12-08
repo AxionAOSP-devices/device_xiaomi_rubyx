@@ -109,12 +109,12 @@ on property:sys.boot_completed=1
     chown system system /proc/ppm/policy/cluster_0_max_freq
     chown system system /proc/ppm/policy/cluster_0_min_freq
     chown system system /proc/ppm/policy/cluster_1_max_freq
-    chown system system /proc/ppm/policy/cluster_0_max_freq
+    chown system system /proc/ppm/policy/cluster_1_min_freq
 
     chmod 0664 /proc/ppm/policy/cluster_0_max_freq
     chmod 0664 /proc/ppm/policy/cluster_0_min_freq
     chmod 0664 /proc/ppm/policy/cluster_1_max_freq
-    chmod 0664 /proc/ppm/policy/cluster_0_max_freq
+    chmod 0664 /proc/ppm/policy/cluster_1_min_freq
 
 service vendor.gralloc-4-0 /vendor/bin/hw/android.hardware.graphics.allocator@4.0-service-mediatek
     class hal animation
@@ -133,4 +133,5 @@ service vendor.hwcomposer-2-3 /vendor/bin/hw/android.hardware.graphics.composer@
     capabilities SYS_NICE
     onrestart restart surfaceflinger
     task_profiles HighPerformance
+
     override
