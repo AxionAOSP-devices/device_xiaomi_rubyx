@@ -99,6 +99,12 @@ debug.sf.enable_hwc_vds=0
 debug.sf.enable_transaction_tracing=false
 debug.sf.predict_hwc_composition_strategy=0
 debug.sf.treat_170m_as_sRGB=1
+
+# Force HW 
+debug.sf.hw=1
+renderthread.skia.reduceopstasksplitting=true
+
+# Display Props
 persist.vendor.sys.pq.disp.mi.soft.brightness=1
 ro.hardware.egl=meow
 ro.hardware.hwcomposer=mtk_common
@@ -120,8 +126,6 @@ ro.vendor.mtk_aod_support=1
 ro.vendor.mtk_hdr_video_support=1
 ro.vendor.mtk_ovl_bringup=0
 ro.vendor.mtk_pq_color_mode=3
-ro.vendor.mtk_pq_color_mode=3
-ro.vendor.mtk_pq_support=2
 ro.vendor.mtk_pq_support=2
 ro.vendor.mtk_zsdhdr_support=1
 ro.vendor.pq.mtk_aal_support=1
@@ -151,10 +155,13 @@ ro.vendor.pq.mtk_ultra_resolution_support=1
 ro.vendor.pq.mtk_video_transition=0
 ro.vendor.sdr2hdr.by.layer.support=false
 ro.surface_flinger.has_HDR_display=true
-ro.surface_flinger.has_wide_color_display=true
 ro.vendor.smvr.p2batch.fhd=4
 ro.vendor.smvr.p2batch.hd=8
 ro.vendor.smvr.p2batch.vga=16
+
+# Touch & Gaming
+ro.input.video_enabled=false
+debug.graphics.game_default_frame_rate.disabled=true
 
 # Dolby
 ro.vendor.audio.device.dbcom=dolby_common
@@ -173,7 +180,7 @@ ro.hardware.gatekeeper=beanpod
 # GNSS
 ro.vendor.mtk_log_hide_gps=1
 
-# Graphics
+# Graphics Tracing
 debug.hwui.skia_tracing_enabled=false
 debug.hwui.skia_use_perfetto_track_events=false
 
@@ -196,13 +203,21 @@ ro.vendor.mediatek.platform=MT6877
 ro.vendor.mediatek.version.branch=alps-mp-s0.mp1.tc8sp-cs1
 ro.vendor.mediatek.version.release=alps-mp-s0.mp1.tc8sp-cs1-V1.0.13_xiaomi.s0mp1.k6877v1.64.k419_P15
 
-# Memory
+# Memory & Idle 
 ro.config.fha_enable=true
 ro.sys.fw.bg_apps_limit=32
+ro.vendor.qti.sys.fw.bg_apps_limit=32
 ro.config.dha_cached_max=16
 ro.config.dha_empty_max=42
 ro.config.dha_empty_init=32
 ro.config.dha_lmk_scale=0.545
+
+# Deep Sleep
+profiler.force_disable_err_rpt=1
+profiler.force_disable_ulog=1
+log.tag.stats_log=I
+ro.logd.size=64k
+ro.logd.size.stats=64k
 
 # Neural Networks
 debug.mtk_tflite.target_nnapi=29
@@ -263,6 +278,10 @@ ro.vendor.sim_me_lock_mode=3
 telephony.lteOnCdmaDevice=1
 import /vendor/etc/rsc/${ro.boot.hwc}/ro.prop
 
+# Radio
+persist.radio.add_power_save=1
+persist.radio.data_ltd_sys_ind=1
+
 # IMS
 persist.vendor.anr.enhancement=0
 persist.vendor.mtk.volte.enable=1
@@ -297,6 +316,9 @@ ro.vendor.wifi.sap.concurrent.iface=ap1
 ro.vendor.wifi.sap.interface=ap0
 ro.vendor.wlan.chrdev=wmt_chrdev_wifi
 ro.vendor.wlan.gen=gen4m
+
+# WiFi Idle Saver
+wifi.supplicant_scan_interval=180
 
 # ZRAM
 ro.zram.mark_idle_delay_mins=60
