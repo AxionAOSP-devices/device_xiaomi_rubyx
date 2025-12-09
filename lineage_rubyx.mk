@@ -13,9 +13,6 @@ $(call inherit-product, device/xiaomi/rubyx/device.mk)
 # Inherit some common LineageOS stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-# GMS flag
-WITH_GMS := false
-
 PRODUCT_NAME := lineage_rubyx
 PRODUCT_DEVICE := rubyx
 PRODUCT_MANUFACTURER := Xiaomi
@@ -29,3 +26,5 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     SystemName=ruby_global \
     SystemDevice=ruby
 
+# LosExt
+WITH_GMS := false

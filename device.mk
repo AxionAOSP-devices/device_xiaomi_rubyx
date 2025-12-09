@@ -390,3 +390,9 @@ $(call inherit-product, vendor/xiaomi/rubyx/rubyx-vendor.mk)
 
 # Animation fix
 PERF_ANIM_OVERRIDE := true
+
+# LosExt
+LOW_RAM_ART := false
+TARGET_ENABLE_BLUR := false
+SYSTEM_OPTIMIZE_JAVA := true
+SYSTEMUI_OPTIMIZE_JAVA := true
