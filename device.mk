@@ -8,15 +8,6 @@ DEVICE_PATH := device/xiaomi/rubyx
 # Installs gsi keys into ramdisk, to boot a developer GSI with verified boot.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/developer_gsi_keys.mk)
 
-# Dalvik VM Configuration
-PRODUCT_VENDOR_PROPERTIES += \
-    dalvik.vm.heapstartsize=24m \
-    dalvik.vm.heapgrowthlimit=384m \
-    dalvik.vm.heapsize=512m \
-    dalvik.vm.heaptargetutilization=0.42 \
-    dalvik.vm.heapminfree=8m \
-    dalvik.vm.heapmaxfree=56m
-
 # Inherit virtual_ab_ota product
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
 
@@ -40,7 +31,7 @@ PRODUCT_PACKAGES += \
 AB_OTA_POSTINSTALL_CONFIG += \
     RUN_POSTINSTALL_system=true \
     POSTINSTALL_PATH_system=system/bin/otapreopt_script \
-    FILESYSTEM_TYPE_system=ext4 \
+    FILESYSTEM_TYPE_system=erofs \
     POSTINSTALL_OPTIONAL_system=true
 
 AB_OTA_POSTINSTALL_CONFIG += \
@@ -344,7 +335,7 @@ PRODUCT_SHIPPING_API_LEVEL := 31
 
 # SKU properties
 PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,*,$(DEVICE_PATH)/configs/sku/,$(TARGET_COPY_OUT_ODM)/etc)
+    $(call find-copy-subdir-files,*,$(DEVICE_PATH)/configs/sku/,$(TARGET_COPY_OUT_ODM)/etc/sku)
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
@@ -356,8 +347,8 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/mediatek/libmtkperf_client \
     hardware/xiaomi
 
-# Speed profile services and wifi-service to reduce RAM and storage
-PRODUCT_SYSTEM_SERVER_COMPILER_FILTER := speed-profile
+# Force compilation for System Server 
+PRODUCT_SYSTEM_SERVER_COMPILER_FILTER := speed
 
 # Thermal
 PRODUCT_PACKAGES += \
