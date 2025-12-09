@@ -42,7 +42,7 @@
             <Quirk name="wants-NAL-fragments" />
             <Feature name="adaptive-playback"/>
             <Limit name="concurrent-instances" max="32" />
-            <Limit name="performance-point-3840x2160" value="30" />
+            <Limit name="performance-point-3840x2160" value="60" />
         </MediaCodec>
         <MediaCodec name="c2.mtk.avc.decoder.secure" type="video/avc" >
             <Alias name="OMX.MTK.VIDEO.DECODER.AVC.secure" />
@@ -58,7 +58,7 @@
             <Limit name="size" min="16x16" max="4096x2176" />
             <Feature name="adaptive-playback"/>
             <Limit name="concurrent-instances" max="32" />
-            <Limit name="performance-point-3840x2160" value="30" />
+            <Limit name="performance-point-3840x2160" value="60" />
         </MediaCodec>
         <MediaCodec name="c2.mtk.hevc.decoder.secure" type="video/hevc" >
             <Alias name="OMX.MTK.VIDEO.DECODER.HEVC.secure" />
@@ -87,7 +87,7 @@
             <Limit name="size" min="16x16" max="4096x2176" />
             <Feature name="adaptive-playback"/>
             <Limit name="concurrent-instances" max="32" />
-            <Limit name="performance-point-3840x2160" value="30" />
+            <Limit name="performance-point-3840x2160" value="60" />
         </MediaCodec>
         <MediaCodec name="c2.mtk.vp9.decoder.secure" type="video/x-vnd.on2.vp9" >
             <Alias name="OMX.MTK.VIDEO.DECODER.VP9.secure" />
@@ -103,7 +103,7 @@
             <Limit name="size" min="16x16" max="4096x2176" />
             <Feature name="adaptive-playback"/>
             <Limit name="concurrent-instances" max="32" />
-            <Limit name="performance-point-3840x2160" value="30" />
+            <Limit name="performance-point-3840x2160" value="60" />
         </MediaCodec>
         <MediaCodec name="c2.mtk.av1.decoder.secure" type="video/av01" >
             <Limit name="size" min="16x16" max="1920x1088" />
