@@ -4,16 +4,16 @@
       "Name": "CPU",
       "Type": "CPU",
       "ZoneName": "mtktscpu",
-      "HotThreshold": ["NaN", "NaN", "NaN", 85, 90, 100, 117],
-      "VrThreshold": "85.0",
+      "HotThreshold": ["NaN", "NaN", "NaN", 90, 95, 100, 117],
+      "VrThreshold": "90.0",
       "Multiplier": 0.001
     },
     {
       "Name": "GPU",
       "Type": "GPU",
       "ZoneName": "mtktscpu",
-      "HotThreshold": ["NaN", "NaN", "NaN", 85, 90, 100, 117],
-      "VrThreshold": "85.0",
+      "HotThreshold": ["NaN", "NaN", "NaN", 90, 95, 100, 117],
+      "VrThreshold": "90.0",
       "Multiplier": 0.001
     },
     {
@@ -26,8 +26,8 @@
     {
       "Name": "mtktsAP",
       "Type": "SKIN",
-      "HotThreshold": ["NaN", "NaN", "NaN", 50, 70, 80, 90],
-      "VrThreshold": "50.0",
+      "HotThreshold": ["NaN", "NaN", "NaN", 55, 75, 85, 90],
+      "VrThreshold": "55.0",
       "Multiplier": 0.001
     },
     {
@@ -41,7 +41,7 @@
       "Name": "NPU",
       "Type": "NPU",
       "ZoneName": "mtktscpu",
-      "HotThreshold": ["NaN", "NaN", "NaN", 85, 90, 100, 117],
+      "HotThreshold": ["NaN", "NaN", "NaN", 90, 95, 100, 117],
       "VrThreshold": "NaN",
       "Multiplier": 0.001
     }
