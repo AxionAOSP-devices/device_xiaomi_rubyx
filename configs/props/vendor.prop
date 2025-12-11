@@ -216,8 +216,6 @@ ro.config.dha_lmk_scale=0.545
 profiler.force_disable_err_rpt=1
 profiler.force_disable_ulog=1
 log.tag.stats_log=I
-ro.logd.size=64k
-ro.logd.size.stats=64k
 
 # Neural Networks
 debug.mtk_tflite.target_nnapi=29
