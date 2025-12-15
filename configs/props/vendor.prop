@@ -155,6 +155,8 @@ ro.vendor.sdr2hdr.by.layer.support=false
 ro.vendor.smvr.p2batch.fhd=4
 ro.vendor.smvr.p2batch.hd=8
 ro.vendor.smvr.p2batch.vga=16
+debug.hwui.skia_tracing_enabled=false
+debug.hwui.skia_use_perfetto_track_events=false
 
 # Dolby
 ro.vendor.audio.device.dbcom=dolby_common
