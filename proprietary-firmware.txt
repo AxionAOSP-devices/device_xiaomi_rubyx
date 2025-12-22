@@ -1,18 +1,18 @@
-# Unpinned blobs from HyperOS OS2.0.8.0.UMOMIXM (ruby) fastboot package
+# Pinned blobs from HyperOS OS2.0.9.0.UMOMIXM (ruby) recovery package
 
-audio_dsp.img;AB
-cam_vpu1.img;AB
-cam_vpu2.img;AB
-cam_vpu3.img;AB
-dpm.img;AB
-gz.img;AB
-lk.img;AB
-logo.bin:logo.img;AB
-mcupm.img;AB
-md1img.img;AB
-pi_img.img;AB
-preloader_ruby.bin:preloader_raw.img;AB
-scp.img;AB
-spmfw.img;AB
-sspm.img;AB
-tee.img;AB
+audio_dsp.img;AB|1b2a91659a01c6bf2d18b44322ed227714aba99d
+cam_vpu1.img;AB|d52357cf7157320eac486a987c14f4e25acdf750
+cam_vpu2.img;AB|52ffa63d75f92f74bc7ae5ea5c81dfa0243b0730
+cam_vpu3.img;AB|59b4faab617e049d3c1e56d297d9e8330da7fdc1
+dpm.img;AB|3ecd272a093e0f904fe3be81db47ba133088e97b
+gz.img;AB|9e1dc16e4608a6a02855a2cb2ce886cd88bfa52e
+lk.img;AB|810b14ae25804d35c9dfa9278a3ce7292126c38f
+logo.bin:logo.img;AB|9bbe60b9c4fd442bd58e5a2682b3c7366697d9b0
+mcupm.img;AB|f7d4b65b2b0a3eb2a543b79df659b0b12e0d9947
+md1img.img;AB|ef6d06a6f1efa7a85e376ef2f1ec38c4130f2911
+pi_img.img;AB|aff3764801351d1926c5bbb7f96006763c64be2d
+preloader_ruby.bin:preloader_raw.img;AB|f5bdef88f4c6a44ce2323fa2860857004bd25109
+scp.img;AB|188a3cf2c7333ed5648ebe72d417f50db70f9263
+spmfw.img;AB|4b06764f766c3c10698b1c20e544177364668edc
+sspm.img;AB|89f9e046e4695fc9dc66ead4b8ed802998e429eb
+tee.img;AB|8adee0f24217c2a9174213bc07b4ad05725b4f78
