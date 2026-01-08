@@ -264,7 +264,7 @@
       "PowerHint": "INTERACTION",
       "Node": "TAUclampMin",
       "Duration": 0,
-      "Value": "10"
+      "Value": "40"
     },
     {
       "PowerHint": "LAUNCH",
