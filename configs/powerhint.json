@@ -196,6 +196,15 @@
       "ResetOnInit": true
     },
     {
+      "Name": "PMQoSCpuDmaLatency",
+      "Path": "/dev/cpu_dma_latency",
+      "Values": [
+        "51",
+        "0"
+      ],  
+      "HoldFd": true
+    },
+    {
       "Name": "PowerHALAudioState",
       "Path": "vendor.powerhal.audio",
       "Values": ["AUDIO_STREAMING_LOW_LATENCY", ""],
