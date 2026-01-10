@@ -1,3 +1,6 @@
+# App Launch Blur
+ro.launcher.blur.appLaunch=0
+
 # Camera
 ro.product.mod_device=ruby_global
 
