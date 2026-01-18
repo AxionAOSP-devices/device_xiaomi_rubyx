@@ -214,15 +214,6 @@
         ""
       ],
       "Type": "Property"
-    },
-    {
-      "Name": "PMQoSCpuDmaLatency",
-      "Path": "/dev/cpu_dma_latency",
-      "Values": [
-        "0",
-        "100"
-      ],
-      "HoldFd": true
     }
   ],
   "Actions": [
@@ -305,12 +296,6 @@
       "Value": "1"
     },
     {
-      "PowerHint": "INTERACTION",
-      "Node": "PMQoSCpuDmaLatency",
-      "Duration": 1500,
-      "Value": "0"
-    },
-    {
       "PowerHint": "LAUNCH",
       "Node": "CPUBigClusterMaxFreq",
       "Duration": 3000,
@@ -369,12 +354,6 @@
       "Node": "SchedBoost",
       "Duration": 3000,
       "Value": "1"
-    },
-    {
-      "PowerHint": "LAUNCH",
-      "Node": "PMQoSCpuDmaLatency",
-      "Duration": 3000,
-      "Value": "0"
     },
     {
       "PowerHint": "CAMERA_LAUNCH",
