@@ -86,6 +86,5 @@
     <bool name="config_statusBarBurnInProtection">true</bool>
     
     <!-- Whether to play turbulence noise after clicking the play button -->
-    <bool name="config_turbulenceNoise">false</bool>
-   
+    <bool name="config_turbulenceNoise">false</bool>   
 </resources>
