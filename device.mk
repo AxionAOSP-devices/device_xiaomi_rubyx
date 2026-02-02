@@ -405,3 +405,12 @@ $(call inherit-product, vendor/xiaomi/rubyx/rubyx-vendor.mk)
 # Include private keys
 -include vendor/infinity-priv/keys/keys.mk
 
+# Axion Stuff
+PERF_GOV_SUPPORTED := true
+PERF_DEFAULT_GOV := schedutil
+PERF_ANIM_OVERRIDE := true
+GPU_FREQS_PATH := /sys/class/devfreq/13000000.mali/available_frequencies
+GPU_MIN_FREQ_PATH := /sys/class/devfreq/13000000.mali/min_freq
+TORCH_STR_SUPPORTED := true
+TARGET_NEEDS_DOZE_FIX := true
+TARGET_SUPPORTED_REFRESH_RATES := 60,120
