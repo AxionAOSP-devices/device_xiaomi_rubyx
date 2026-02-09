@@ -855,7 +855,10 @@ on property:sys.boot_completed=1
     restart android-hardware-media-c2-hal-1-2
     chmod 440 /proc/net/unix
 
-on boot 
+on boot
+    # FPSGO FBT Game
+    insmod /vendor/lib/modules/fpsgo.ko
+
     # Allow PowerHAL to control CPU frequency limits
     chown system system /sys/devices/system/cpu/cpufreq/policy0/scaling_max_freq
     chown system system /sys/devices/system/cpu/cpufreq/policy0/scaling_min_freq
